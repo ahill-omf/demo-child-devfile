@@ -2,4 +2,4 @@ schemaVersion: 2.0.0
 metadata:
   name: my-project-dev
 parent:
-    uri: https://gist.github.com/ahill-omf/0bd58e119f31d60b12b5338c656f0f11
+    uri: https://gist.githubusercontent.com/ahill-omf/0bd58e119f31d60b12b5338c656f0f11/raw/3e06cd36a31c23319e3738d31690417d30852ca3/gistfile1.txt
