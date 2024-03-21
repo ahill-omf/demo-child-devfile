@@ -1,0 +1,5 @@
+schemaVersion: 2.0.0
+metadata:
+  name: my-project-dev
+parent:
+    uri: https://raw.githubusercontent.com/ahill-omf/ansible-devspaces-poc/main/devfile.yaml?token=GHSAT0AAAAAACNVO7QNNR3OTH4BNCLI5W6GZP4S2DQ
