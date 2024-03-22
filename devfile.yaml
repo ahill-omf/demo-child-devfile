@@ -2,4 +2,14 @@ schemaVersion: 2.0.0
 metadata:
   name: my-project-dev
 parent:
-    uri: https://gist.githubusercontent.com/ahill-omf/0bd58e119f31d60b12b5338c656f0f11/raw/3e06cd36a31c23319e3738d31690417d30852ca3/gistfile1.txtx
+    uri: https://raw.githubusercontent.com/ahill-omf/demo-parent-devfile/main/devfile.yaml
+commands:
+  - id: molecule-create
+    exec:
+      label: "### OVERRIDE ### 1.Molecule: start a test pod for the automation"
+      commandLine: 'df -h'
+      workingDir: ${PROJECT_SOURCE}/collections/ansible_collections/omf/devspaces_poc/extensions
+      group:
+        kind: run
+        isDefault: true
+      component: tooling-container
