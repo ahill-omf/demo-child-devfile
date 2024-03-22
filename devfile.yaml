@@ -3,13 +3,13 @@ metadata:
   name: my-project-dev
 parent:
     uri: https://raw.githubusercontent.com/ahill-omf/demo-parent-devfile/main/devfile.yaml
-commands:
-  - id: molecule-create
-    exec:
-      label: "### OVERRIDE ### 1.Molecule: start a test pod for the automation"
-      commandLine: 'df -h'
-      workingDir: ${PROJECT_SOURCE}/collections/ansible_collections/omf/devspaces_poc/extensions
-      group:
-        kind: run
-        isDefault: true
-      component: tooling-container
+  commands:
+    - id: molecule-create
+      exec:
+        label: "### OVERRIDE ### 1.Molecule: start a test pod for the automation"
+        commandLine: 'df -h'
+        workingDir: ${PROJECT_SOURCE}/collections/ansible_collections/omf/devspaces_poc/extensions
+        group:
+          kind: run
+          isDefault: true
+        component: tooling-container
