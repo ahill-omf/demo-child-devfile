@@ -2,8 +2,8 @@ schemaVersion: 2.0.0
 metadata:
   name: my-project-dev
 parent:
-    uri: https://raw.githubusercontent.com/ahill-omf/demo-parent-devfile/main/devfile.yaml
-  commands:
+  uri: https://raw.githubusercontent.com/ahill-omf/demo-parent-devfile/main/devfile.yaml
+  commands: [
     - id: molecule-create
       exec:
         label: "### OVERRIDE ### 1.Molecule: start a test pod for the automation"
@@ -13,3 +13,4 @@ parent:
           kind: run
           isDefault: true
         component: tooling-container
+  ]
